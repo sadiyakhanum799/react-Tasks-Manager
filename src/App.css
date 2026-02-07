@@ -1,0 +1,140 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #9fc5f7;
+}
+
+/* ===== Main App Container ===== */
+.App {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* ===== Title ===== */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000b2d;
+}
+
+/* ===== Form Styling ===== */
+.taskForm {
+  background: rgb(83, 147, 185);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.taskForm input,
+.taskForm textarea,
+.taskForm select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.taskForm textarea {
+  resize: none;
+  height: 70px;
+}
+
+.taskForm button {
+  padding: 10px;
+  background: #0376f9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.taskForm button:hover {
+  background: #357abd;
+}
+
+/* ===== Stats Section ===== */
+.tasksStat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-weight: 500;
+  color: #130909;
+}
+
+/* ===== Task Item ===== */
+.task-item {
+  background: rgb(253, 254, 254);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+}
+
+.task-item h3 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.task-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* ===== Task Actions ===== */
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.task-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.task-actions button:first-child {
+  background: #27ae60;
+  color: white;
+}
+
+.task-actions button:first-child:hover {
+  background: #1e874b;
+}
+
+.task-actions button:last-child {
+  background: #e74c3c;
+  color: white;
+}
+
+.task-actions button:last-child:hover {
+  background: #c0392b;
+}
+
+/* ===== Empty State ===== */
+.empty-search {
+  text-align: center;
+  margin-top:30px;
+  color:#c0392b;
+}
